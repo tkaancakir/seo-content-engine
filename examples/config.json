@@ -1,0 +1,23 @@
+{
+  "projectId": "example-workshop",
+  "brand": {
+    "name": "Örnek Atölye",
+    "audience": "Evde hobi projelerine başlamak isteyen yetişkinler",
+    "locale": "tr",
+    "tone": "Sade, açıklayıcı ve ölçülü"
+  },
+  "pillars": [
+    { "id": "malzeme-secimi", "label": "Başlangıç için malzeme seçimi", "riskTier": "normal" },
+    { "id": "calisma-duzeni", "label": "Çalışma alanını düzenleme", "riskTier": "normal" }
+  ],
+  "facets": [
+    { "id": "baslangic", "description": "İlk kez başlayan kişinin pratik sorusu" },
+    { "id": "karsilastirma", "description": "İki yaklaşımın kullanım farkları" }
+  ],
+  "editorialRules": ["Kaynak, istatistik veya deneyim uydurma.", "Ürün ve sonuç garantisi verme."],
+  "blockedPhrases": ["kesin sonuç", "mucize"],
+  "requiredNotice": "Bu örnek içerik editör incelemesi için hazırlanmış bir taslaktır.",
+  "maxAttempts": 3,
+  "duplicateThreshold": 0.9,
+  "keywordThreshold": 0.93
+}

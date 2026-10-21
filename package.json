@@ -1,0 +1,22 @@
+{
+  "name": "seo-content-engine",
+  "version": "0.1.0",
+  "description": "Configurable, server-side SEO content drafting with Gemini and duplicate checks.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.12.0" },
+  "exports": { ".": "./dist/src/index.js", "./gemini": "./dist/src/providers/gemini.js", "./adapters": "./dist/src/adapters/index.js" },
+  "types": "./dist/src/index.d.ts",
+  "files": ["dist/src", "README.md", "LICENSE", "SECURITY.md"],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts",
+    "demo": "tsx examples/demo.ts",
+    "generate": "tsx src/cli.ts",
+    "check": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": { "@google/genai": "2.11.0", "zod": "4.4.3" },
+  "devDependencies": { "@types/node": "22.19.15", "tsx": "4.22.4", "typescript": "5.9.3" }
+}
