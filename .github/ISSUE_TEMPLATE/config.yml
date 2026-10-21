@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Usage guide
+    url: https://github.com/tkaancakir/seo-content-engine/blob/main/docs/USAGE.md
+    about: Start here for installation, configuration, and content drafting.
+  - name: GitHub guide
+    url: https://github.com/tkaancakir/seo-content-engine/blob/main/docs/GITHUB.md
+    about: Learn how to download the code, contribute changes, and use the repository's GitHub sections.
+  - name: Security reporting
+    url: https://github.com/tkaancakir/seo-content-engine/blob/main/SECURITY.md
+    about: Read these instructions before sharing a vulnerability or key exposure.

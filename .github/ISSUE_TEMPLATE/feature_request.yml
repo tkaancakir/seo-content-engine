@@ -1,0 +1,35 @@
+name: Feature request
+description: Describe the need and proposed behavior.
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe your idea without sharing real client data or credentials.
+        Opening a request does not guarantee implementation or a delivery date.
+  - type: textarea
+    id: need
+    attributes:
+      label: What need would this address?
+      description: Describe the task you want to complete and where the current behavior gets in your way.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: What would a useful solution look like to the user? A small example with fictional data can help.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and impact
+      description: Include other approaches you have tried or possible effects on existing use cases.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked for similar requests and included no sensitive information.
+          required: true

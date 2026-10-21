@@ -1,22 +1,22 @@
 {
   "projectId": "example-workshop",
   "brand": {
-    "name": "Örnek Atölye",
-    "audience": "Evde hobi projelerine başlamak isteyen yetişkinler",
-    "locale": "tr",
-    "tone": "Sade, açıklayıcı ve ölçülü"
+    "name": "Example Workshop",
+    "audience": "Adults starting small craft projects at home",
+    "locale": "en",
+    "tone": "Clear, practical, and measured"
   },
   "pillars": [
-    { "id": "malzeme-secimi", "label": "Başlangıç için malzeme seçimi", "riskTier": "normal" },
-    { "id": "calisma-duzeni", "label": "Çalışma alanını düzenleme", "riskTier": "normal" }
+    { "id": "choosing-supplies", "label": "Choosing supplies for a first project", "riskTier": "normal" },
+    { "id": "workspace-setup", "label": "Organizing a home workspace", "riskTier": "normal" }
   ],
   "facets": [
-    { "id": "baslangic", "description": "İlk kez başlayan kişinin pratik sorusu" },
-    { "id": "karsilastirma", "description": "İki yaklaşımın kullanım farkları" }
+    { "id": "getting-started", "description": "A practical question from someone getting started" },
+    { "id": "comparison", "description": "When to choose one approach over another" }
   ],
-  "editorialRules": ["Kaynak, istatistik veya deneyim uydurma.", "Ürün ve sonuç garantisi verme."],
-  "blockedPhrases": ["kesin sonuç", "mucize"],
-  "requiredNotice": "Bu örnek içerik editör incelemesi için hazırlanmış bir taslaktır.",
+  "editorialRules": ["Do not invent sources, statistics, or personal experience.", "Do not guarantee product performance or results."],
+  "blockedPhrases": ["guaranteed results", "miracle"],
+  "requiredNotice": "This example is a draft for editorial review.",
   "maxAttempts": 3,
   "duplicateThreshold": 0.9,
   "keywordThreshold": 0.93

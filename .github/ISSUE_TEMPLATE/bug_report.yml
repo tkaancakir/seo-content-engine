@@ -1,0 +1,44 @@
+name: Bug report
+description: Report a reproducible problem.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public. Do not share API keys, .env files, client data, or raw logs.
+        To report a security vulnerability, follow [SECURITY.md](https://github.com/tkaancakir/seo-content-engine/blob/main/SECURITY.md).
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: Expected and actual behavior
+      description: What did you expect to happen, and what happened instead? Include only the generic error code, if available.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Use the example configuration and a mock provider if possible. Remove real content and credentials.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment and code version
+      description: Include your operating system, Node.js version, and commit ID if known. If you downloaded a ZIP, provide the download date.
+      placeholder: "macOS, Node.js 22.x, commit ID or download date"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked for similar open issues.
+          required: true
+        - label: My examples contain no keys, client data, or raw logs.
+          required: true

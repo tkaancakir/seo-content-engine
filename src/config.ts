@@ -6,7 +6,7 @@ const text = z.string().trim().min(1).max(10_000);
 const id = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).max(80);
 export const configSchema = z.object({
   projectId: id,
-  brand: z.object({ name: text, audience: text, locale: z.string().min(2).max(40).default("tr"), tone: text }).strict(),
+  brand: z.object({ name: text, audience: text, locale: z.string().min(2).max(40).default("en"), tone: text }).strict(),
   pillars: z.array(z.object({ id, label: text, riskTier: z.enum(["normal", "high"]).default("normal") }).strict()).min(1).max(100),
   facets: z.array(z.object({ id, description: text }).strict()).min(1).max(30),
   editorialRules: z.array(text).max(100).default([]),
